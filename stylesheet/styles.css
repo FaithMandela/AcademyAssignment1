@@ -25,19 +25,17 @@ body, html {
       background: rgba(0, 0, 0, 0.5);
       color: #f1f1f1;
       font-size: 70px;
-      text-align: center;
-      
+      text-align: center;   
+
   }
-  .column{
-      float: left;
-      padding: 10px;
-      height: 300px;
-  }
-  .left {
-      width: 25%;
-  }
-  .right {
-      width: 75%;
+  .row {
+    display: flex;
+    box-sizing: border-box;
   }
   
-  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 20px;
+
+  }
